@@ -33,6 +33,7 @@
     - app_server
 
 - name: install database tier
+  become: yes  
   hosts: appdbs
   roles: 
     - geerlingguy.postgresql
